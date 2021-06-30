@@ -1,0 +1,30 @@
+package com.cg.spring.demo;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+        System.out.println( "start" );
+        
+        ApplicationContext context = new ClassPathXmlApplicationContext("SpringConfig.xml");
+        Employee emp = context.getBean("employee",Employee.class);
+        emp.work();
+        
+       // emp.name = "Some Name";
+        System.out.println(emp.ename);
+        
+        Employee emp2 = context.getBean("employee2",Employee.class);
+        emp.work();
+        
+       // emp.name = "Some Name";
+        System.out.println(emp2.ename);
+        System.out.println("End");
+    }
+}

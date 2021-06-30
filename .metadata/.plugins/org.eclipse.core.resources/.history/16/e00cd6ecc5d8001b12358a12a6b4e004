@@ -1,0 +1,67 @@
+package com.cg.jpa.app.lab1;
+
+import javax.persistence.*;
+
+@Entity
+@Table(name = "SBU")
+public class SBU {
+
+	@Id
+	@Column(name = "sbuId")
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private int id;
+
+	@Column(name = "sbuName", length = 128, nullable = false)
+	private String name;
+
+	@Column
+	private String sbuHead;
+
+	public SBU(int id, String name, String sbuHead) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.sbuHead = sbuHead;
+	}
+
+	public SBU() {
+		super();
+		
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getSbuHead() {
+		return sbuHead;
+	}
+
+	public void setSbuHead(String sbuHead) {
+		this.sbuHead = sbuHead;
+	}
+
+	@Override
+	public String toString() {
+		return "SBU [id=" + id + ", name=" + name + ", sbuHead=" + sbuHead + "]";
+	}
+	
+	
+	
+	
+	
+}
+
+	

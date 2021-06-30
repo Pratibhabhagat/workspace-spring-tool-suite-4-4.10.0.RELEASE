@@ -1,0 +1,17 @@
+package com.cg.spring.demo;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+        System.out.println( "start" );
+        
+        Employee emp = new Employee();
+        emp.work();
+        System.out.println("End");
+    }
+}

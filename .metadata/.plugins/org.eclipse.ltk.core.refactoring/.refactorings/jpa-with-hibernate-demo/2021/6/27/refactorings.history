@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.cg.jpa.demo.jpqlDemo&apos; to &apos;JpqlDemo&apos;&#x0D;&#x0A;- Original project: &apos;jpa-with-hibernate-demo&apos;&#x0D;&#x0A;- Original element: &apos;com.cg.jpa.demo.jpqlDemo&apos;&#x0D;&#x0A;- Renamed element: &apos;com.cg.jpa.demo.JpqlDemo&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;jpqlDemo&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.cg.jpa.demo{jpqlDemo.java[jpqlDemo" matchStrategy="1" name="JpqlDemo" qualified="false" references="true" similarDeclarations="false" stamp="1625028520156" textual="false" version="1.0"/>
+</session>
